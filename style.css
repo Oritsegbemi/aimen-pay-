@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    --mainFont: "Lato", sans-serif;
+    --baseColor: #4836C8;
+    --accent:#FDB71A;
+   --accentLight:#7C8191;
+   --buttonGradient: linear-gradient(118.9deg, #4836C8 -1.67%, #8176F1 102.68%);
+    --accentDark:#8176F1;
+    --buttonPaddingTopBottom:0.5rem;
+    --buttonPaddingleftRight:1.25rem
+    /* --button: #2b5697; */
+   
+}
