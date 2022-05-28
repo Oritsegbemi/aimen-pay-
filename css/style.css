@@ -1,0 +1,859 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainFont: "Lato", sans-serif;
+    --baseColor: #4836C8;
+    --accent:#FDB71A;
+   --accentLight:#7C8191;
+   --buttonGradient: linear-gradient(118.9deg, #4836C8 -1.67%, #8176F1 102.68%);
+    --accentDark:#8176F1;
+    --black:#000000;
+    --paragraph:#5F6B7A;
+    --white:#ffffff
+    --purple: #201353;
+    /* --button: #2b5697; */
+    /* HOW TO REFRENCE CSS E.G BACKGROUND-COLOR :VAR(--ACCENT)
+    background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.2) 67.68%, rgba(238, 23, 75, 0) 91.47%, rgba(72, 54, 200, 0.126) 103.59%)
+     */
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    /* min-height: 100vh; */
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+a{
+text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+height: 100vh;
+width:100%;
+background:url(/assets/img/Header\ BAckground.png);
+background-position: center;
+background-size: cover;
+}
+
+.logo img{
+    height:1.875rem ;
+    /* width: 50%; */
+}
+nav{
+    height:3.75rem;
+    background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.2) 67.68%, rgba(238, 23, 75, 0) 91.47%, rgba(72, 54, 200, 0.126) 103.59%);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.hamburger__menu{
+    height: 2rem;
+    width: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.hamburger__lines {
+    display: block;
+    height: 0.1rem;
+    width:1.5rem;
+    background-color: var(--black);
+}
+ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 0px);
+    top: 0;
+    /* left: 0; */
+    background-color: #ffffff;
+
+    animation: slide 0.7s ease-in-out ;
+    
+}
+
+@keyframes slide {
+
+from{
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 0.5;
+
+    }
+}
+
+
+
+ul > div{
+    position: relative;
+    width: 95vw;
+    height: 100%;
+    /* margin: 1rem auto; */
+    background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.2) 67.68%,  rgba(104, 71, 71, 0.2) 67.68%,  rgba(255, 255, 255, 0.2) 67.68%);
+    border-radius: 0.4rem;
+    box-shadow: -13.7661px 10.5893px 46px rgba(72, 54, 200, 0.3);
+
+    /* box-shadow: 2px 2px 2px #ccc ; */
+    /* background-color: var(--); */
+    
+    display: grid;
+    align-content: space-around;
+    justify-content:center ;  
+}
+.list__container {
+    height:17rem;
+    width: 25rem;
+}
+
+ul * li {
+    width: 100%;
+    height: 3rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+    /* background-color: red; */
+}
+.bi-x-container{
+    display: inline-block;
+    padding:1.2rem;
+    background: red;
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.bi-x, .bi-list {
+    font-size: 2rem;
+}
+  li > a {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    color: var(--black);
+ }
+ /* li > a:focus{
+color: var(--baseColor);
+ } */
+
+.link-active{
+    color: var(--baseColor);
+}
+
+
+ 
+ .create--account {
+     background: var(--buttonGradient);
+     box-shadow:-13.7661px 10.5893px 46px rgba(72, 54, 200, 0.3) ;
+     font-size: 1rem;
+     line-height: 1.625rem;
+     color: var(--white);
+     padding: 0.75rem 2rem;
+     border-radius:1.438rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+ }
+
+ /* HERO TEXT CONTAINER STYLING */
+
+ .first-arrow{
+     height: 50%;
+     width: 60%;
+     margin-left: 100px;
+
+ }
+
+ .hero-text--container{
+     height: calc(100vh - 3.75rem);
+     padding-left: 1rem;
+     /* background-color: #ffffff; */
+ }
+
+ .hero--inner--container{
+/* background-color: red; */
+/* width: 98%; */
+margin: 0 auto;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+ }
+
+ .hero--welcome--text {
+    /* width: 8.437rem; */
+    height: 2.125rem;
+    margin-bottom: 0.5rem;
+}
+.hero--welcome--text h6 {
+    font-size:1.875rem ;
+    line-height:2.125rem ;
+    font-weight: 400;
+    color: var(--baseColor);
+}
+.hero--main--text{
+    height: 170px;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+.hero--main--text h2 {
+    font-weight: 700;
+    font-size: 2.813rem;
+    line-height: 3.125rem;
+    color: var(--black);
+
+}
+
+ /* .hero--button--container{
+width: 532px;
+height: 58px;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+ } */
+ .hero--paragraph{
+    /* width: 532px; */
+    height: 5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+ }
+ .hero--paragraph p {
+     font-weight: 400;
+     font-size: 1.125rem;
+     line-height: 1.3125rem;
+     color: var(--paragraph);
+
+ }
+
+ /* HERO SECTION BUTTON CONTAINER */
+ .hero--button--container {
+     /* background: #4836C8; */
+     display: flex;
+     width: 20rem;
+     justify-content: space-between;
+     align-items: center;
+     /* margin-top: 1rem; */
+ }
+ .mobile--button {
+    background: var(--buttonGradient);
+    box-shadow:-13.7661px 10.5893px 46px rgba(72, 54, 200, 0.3) ;
+    font-size: 1rem;
+     line-height: 1.625rem;
+     color: var(--white);
+     padding: 0.75rem 2rem;
+     border-radius:1.438rem;
+ }
+ #demo{
+     background: var(--white);
+    color: var(--baseColor);
+    font-weight: 700;
+ }
+ /* HERO SECTION IMAGE */
+
+ .skye-img{
+    width: 100%;
+    margin-top: 6rem;
+    /* position: relative; */
+}
+.lone-crane{
+    position: absolute;
+    left: 16rem;
+    width: 30%;
+    height: 30%;
+}
+
+/* WHAT WE DO SECTION */
+.what-can-we-do-for-you-container{
+    height:200vh;
+    width:100vw;
+    background:url(/assets/img/Background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 38rem;
+    background-color:  #201353;
+    padding-top: 5rem;
+}
+ 
+.what-can-we-do-for-you-text{
+    text-align: center;
+    line-height:2.125rem ;
+    font-weight: 400;
+    margin-top: 0rem;
+    color: white;
+    padding: 1rem;
+}
+.what-first-text{
+    font-size:1.5rem ;
+}
+.what-second-text{
+    font-size:1.875rem ;
+}
+
+.what-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 18rem;
+}
+.what-flex2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+}
+.what-stack{
+    display: grid;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check-text{
+    text-align: center;
+    /* padding: 1rem; */
+    width: 150px;
+    color: white;
+}
+.check-paragraph{
+    /* padding-left: 0.5rem; */
+}
+.what--button--container {
+    /* background: #4836C8; */
+    display: flex;
+    width: 200rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-left: 11rem;
+    
+    margin-top: 6rem;
+}
+.what--mobile--button {
+    background: var(--buttonGradient);
+    box-shadow:-13.7661px 10.5893px 46px rgba(72, 54, 200, 0.3) ;
+    font-size: 1rem;
+     line-height: 1.625rem;
+     color: white;
+     padding: 1rem 1rem;
+     border-radius:1.9rem;
+     padding-left: 2.8rem;
+     height: 3.5rem;
+     width: 10rem;
+ }
+
+/* WHY EMPLOYERS CHOOSE AMIENPAY */
+.why-container{
+    height:200vh;
+    width:100vw;
+    background:url(/assets/img/Background2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* margin-top: 38rem; */
+    background-color:  white;
+    padding-top: 5rem;
+
+}
+
+.why-text{
+    text-align: center;
+    width: 30rem;
+    
+    
+    
+}
+.why-text-p{
+    height: 170px;
+    color: #5F6B7A;
+}
+.why-text-h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.coloured-text{
+    color: #4836C8;
+}
+.why-flex{
+    display: flex;
+}
+.box{
+    margin-left: 3rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+    height: 14rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    /* margin-top: -50rem; */
+    border: 1px solid #E1E7EC;
+}
+.box2{
+    margin-left: 3rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+    height: 13rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    border: 1px solid #E1E7EC;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.icon-text1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+}
+
+.icon-text2{
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+}
+
+/* ACROSS AFRICA STYLE */
+.across-africa{
+    background:url(/assets/img/Background3.png);
+    /* height:200vh; */
+    width:100vw;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 25rem;
+    text-align: center;
+    background-position-y: 2rem;
+    
+}
+.across-afica-text1{
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    width: 25rem;
+    padding-left: 6rem;
+}
+.across-afica-text2{
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-bottom: 1rem;
+    width: 27rem;
+    font-weight: 400;
+    padding-left: 5rem;
+    color: #5F6B7A;
+    
+}
+.aat{
+    margin-bottom: 5.5rem;
+}
+.across-africa--mobile--button{
+    background: var(--buttonGradient);
+    box-shadow:-13.7661px 10.5893px 46px rgba(72, 54, 200, 0.3) ;
+    font-size: 1rem;
+     line-height: 1.625rem;
+     color: white;
+     padding: 1rem 2rem;
+     border-radius:1.9rem;
+     /* padding-left: 1rem; */
+     height: 3.5rem;
+     width: 1rem;
+}
+.flag{
+    margin-top: 5.5rem;
+}
+.flag-text{
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    margin-bottom: 0.9rem;
+    width: 27rem;
+    font-weight: 500;
+    padding-left: 2.5rem;
+}
+.flag-img{
+ width: 45px;
+}
+
+/* WHO CAN STYLE */
+
+.who-can-container{
+    background:url(/assets/img/Background4.png);
+    /* height:200vh; */
+    width:100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 30rem;
+    text-align: center;
+    background-position-y: 8rem;
+    /* background-color: rgba(230, 230, 230, 0.521); */
+}
+
+.who-can-text-h3{
+    width: 21rem;
+    font-size: 2rem;
+    padding-left: 10rem;
+    padding-top: 14rem;
+}
+.who-can-text-p{
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-bottom: 1rem;
+    width: 27rem;
+    font-weight: 400;
+    padding-left: 5rem;
+    color: #5F6B7A;
+    padding-top: 1rem;
+}
+.who-flex{
+    display: flex;
+    margin-top: 5rem;
+
+}
+
+/* ARE YOU READY STYLE */
+
+.ready-container{
+    background-color: #4836C8;
+    margin-top: 16rem;
+    height: 38rem;
+}
+
+.ready-text1{
+        align-items: center;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+        width: 28rem;
+        padding-left: 5rem;
+        padding-top: 5rem;
+        color: white;
+}
+.ready-text2{
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    margin-bottom: 0.9rem;
+    width: 30rem;
+    font-weight: 500;
+    padding-left: 2rem;
+    color: white;
+}
+
+.create--account {
+    background: var(--buttonGradient);
+    box-shadow:-13.7661px 10.5893px 46px rgba(72, 54, 200, 0.3) ;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border-radius:1.438rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.ready--button--container {
+
+    margin-top: 7rem;
+    margin-left: 8.5rem;
+    
+}
+.ready--button--container2 {
+    margin-top: 5rem;
+    margin-left: 8.5rem;
+}
+.create-account-button {
+   background: #F9B912;
+   font-size: 1rem;
+    line-height: 1.625rem;
+    color: white;
+    padding: 2rem 3rem;
+    border-radius:4rem;
+    font-weight: 700;
+   
+    
+   
+}
+.demo-button {
+    background: white;
+   font-size: 1rem;
+    line-height: 1.625rem;
+    color: #4836C8;
+    font-weight: 700;
+    padding: 2rem 3.3rem;
+    border-radius:4rem;
+    margin-top: 2rem;
+
+ }
+ .pointer{
+    cursor: pointer;
+}
+
+/* FOOTER STYLE */
+.footer{
+    background-color: #201353;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    height: 45rem;
+}
+.footer-text{
+    width: 18rem;
+    color: white;
+    padding-top: 0.5rem;
+    
+}
+.b{
+    font-weight: 700;
+}
+.footer-flex{
+    color: white;
+    padding-right: 5rem;
+    padding-left: 0;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.3rem;
+    font-weight: 400;
+}
+
+.footer-text2{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+
+.footer-flex2{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.copyright{
+    padding-top: 5rem;
+    text-align: center;
+    color: white;
+}
+.icons{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width:375px) {
+
+    .first-arrow{
+        padding-top: -35rem;
+        height: 50vw;
+        width: 50%;
+        margin-left: 100px;
+   
+    }
+    .hero-text--container{
+        height: 100%;
+    }
+    
+    .lone-crane{
+        /* width: 8rem; */
+        height: 9rem;
+        padding-top: 2rem;
+        padding-right: 1rem;
+    }
+
+    .what-can-we-do-for-you-container{
+        margin-top: 2rem;
+        height: 100vh;
+    }
+    .what--button--container{
+        padding-left: 7rem;
+        width: 20rem;
+    }
+    .why-text {
+        text-align: center;
+        width: 23rem;
+    }
+    .why-flex{
+        display: block;
+    }
+    .box{
+        margin-bottom: 2rem;
+        margin-left: 6.5rem;
+    }
+    .box2{
+        margin-left: 6.5rem;
+        margin-bottom: 2rem;
+    }
+    .why-container {
+        height: 155vh;
+        width: 100vw; 
+        background-position: bottom;
+    }
+
+    .across-afica-text1 {
+        width: 22rem;
+        padding-left: 1rem;
+    }
+    .across-afica-text2 {
+        width: 22rem;
+        padding-left: 1rem;
+    }
+    .flag-text {
+        padding-left: 4rem;
+        width: 20rem;
+    }
+
+    .who-can-text-h3{
+        width: 22rem;
+        padding-left: 2rem;
+    }
+    .who-can-text-p{
+        width: 21rem;
+        padding-left: 2rem;
+    }
+    .who-flex{
+        display: block;
+    }
+    .ready-container{
+        margin-top: 38rem;
+    }
+
+    .ready-text1{
+        width: 21rem;
+        padding-left: 2rem;
+        line-height: 2rem;
+    }
+    .ready-text2{
+        width: 21rem;
+        padding-left: 2rem;
+        line-height: 1.5rem;
+    }
+    .ready--button--container {
+        margin-top: 5rem;
+        margin-left: 5.5rem;
+        width: 14rem;
+    }
+    .ready--button--container2 {
+        margin-top: 5rem;
+        margin-left: 5.5rem;
+        width: 14rem;
+    }
+
+    .footer-flex{
+        padding-right: 1rem;
+    }
+    .footer-flex2{
+        padding-right: 2rem;
+    }
+
+
+
+       /* width: 532px; */
+       .hero--paragraph{
+        height: 5rem;
+        padding-right: 0.5rem;
+        margin-bottom:2.5rem;
+        
+    }
+    .hero--paragraph p {
+        line-height: 1.5125rem;
+
+    }
+    .hero-image-container{
+        padding-top: -10rem;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:330px) {
+    .hero--main--text h2 {
+        /* font-weight: 700; */
+        font-size: 2.413rem;
+        line-height: 2.625rem;
+        text-align: center;
+    }
+     .mobile--button {
+        font-size: 0.9rem;
+         margin: 0 0.25rem;
+     }
+     .hero--paragraph{
+        height: 5rem;
+        padding: 0 0.2rem;
+        margin-bottom:4rem;
+        
+    }
+    .hero--paragraph p {
+        text-align: center;
+    }
+     .hero--button--container {
+        justify-content: flex-start;
+        
+    }
+}
