@@ -1,0 +1,400 @@
+@media screen and (min-width:790px) {
+
+.mobile-nav{
+    display: none;
+}
+   
+.logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:1.875rem ;
+    padding-left: 3rem;
+    /* margin-top: 1rem; */
+    /* width: 50%; */
+}
+.logo{
+    padding-top: 1rem;
+}
+.comp{
+    padding-right: 4rem;
+    height:1rem ;
+    width: 5rem;
+    background: transparent;
+}
+.comp-img{
+    padding-right: 3rem;
+    height:4rem;
+    
+}
+
+.desktop-nav{
+    height:4rem;
+    background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.2) 67.68%, rgba(238, 23, 75, 0) 91.47%, rgba(72, 54, 200, 0.126) 103.59%);
+    /* display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; */
+    padding: 0 1rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    padding-left: 40rem;
+    background-color: transparent;
+} 
+li{
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.create--account {
+    /* background: var(--buttonGradient); */
+    /* box-shadow:-13.7661px 10.5893px 46px rgba(72, 54, 200, 0.3) ; */
+    font-size: 1rem;
+    line-height: 1.625rem;
+    height: 2.5rem;
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border-radius:2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+}
+
+ .hero-text--container{
+     display: flex;
+     padding-left: 3.7rem;
+     top: 0;
+ }
+ .welcome{
+     padding-top: 4rem;
+ }
+
+ .first-arrow{
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    transform: rotate(23deg);
+    margin-left: 6rem;
+    margin-top: -9.7rem;
+ }
+ .hero--main--text{
+    height: 170px;
+    width: 32rem;
+    margin-bottom: 2rem;
+}
+.hero--main--text h2 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    color: var(--black);
+
+}
+
+.hero--paragraph{
+    width: 550px;
+    height: 5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
+ }
+
+.lone-crane{
+    position: absolute;
+    left: 16rem;
+    width: 10%;
+    height: 23%;
+    margin-left: 9rem;
+    margin-top: 28.5rem;
+}
+
+.skye-img{
+    /* width: 40rem; */
+    /* height: 40rem; */
+    margin-top: 3rem;
+    /* padding-right: 4rem; */
+    /* position: relative; */
+}
+header{
+    height: 160vh;
+    width:100%;
+    background:url(/assets/img/Header\ BAckground.png);
+    background-position: center;
+    background-size: cover;
+    }
+
+.what-can-we-do-for-you-container{
+     height:150vh;
+     width:100vw;
+     margin-top: 23rem;
+     background-color:  #201353;
+     padding-top: -50rem;
+    }
+
+    .what-can-we-do-for-you-text{
+        text-align: center;
+        line-height:2.125rem ;
+        font-weight: 400;
+        margin-top: 0rem;
+        color: white;
+        padding: 1rem;
+    }
+     .what-first-text{
+        font-size:2rem ;
+        margin-bottom: 1.5rem;
+    }
+    .what-second-text{
+        font-size:3rem ;
+        width: 65rem;
+        padding-left: 20rem;
+        line-height:3.5rem ;
+    }
+    
+    .desktop-flex{
+        display: flex;
+        align-items: center;
+        margin-top: -5rem;
+        margin-left: 4.5rem;
+    }
+    
+    .what-flex2{
+        margin-top: 18rem;
+    }
+    
+    .what-stack{
+        padding-left: 8rem;
+    }
+   
+    .check-image{
+        width: 4rem;
+        height: 4rem;
+    }
+    .check-paragraph{
+        margin-top: 2rem;
+        width: 9.5rem;
+        line-height:1.5rem ;
+
+    }
+    .what--button--container {
+        padding-left: 37rem;
+        margin-top: 4rem;
+    }
+    .why-container{
+        height:47.3rem;
+        margin-top: 4rem;
+    }
+
+.why-text-p{
+    width: 56rem;
+    padding-left: 28rem;
+}
+.why-text-h3{
+    font-size:3rem ;
+    line-height: 3.5rem;
+    width: 73rem;
+    padding-left: 10rem;
+    
+}
+.why-flex2{
+    margin-top: -2rem;
+}
+.box{
+   
+    width: 13rem;
+    height: 15rem;
+}
+.box2{
+    width: 13rem;
+    height: 15rem;
+}
+.desktop-flex2{
+    display: flex;
+    align-items: center;
+    margin-top: -4rem;
+    margin-left: 8rem;
+}
+.icon-text1{
+    width: 8.5rem;
+    padding-left: 1.5rem;
+}
+
+.icon-text2{
+    margin-top: 0.5rem;
+    width: 10rem;
+}
+
+.loner-text{
+    margin-top: -0.3rem;
+}
+
+
+.across-africa{
+    height:150vh;
+}
+
+.across-afica-text1{
+    padding-top: 11rem;
+    font-size:3rem ;
+    line-height: 3.5rem;
+    width: 73rem;
+    padding-left: 10rem;
+}
+.across-afica-text2{
+    width: 57rem;
+    padding-left: 27rem;
+    font-size:1rem ;
+    
+}
+
+.across-africa--mobile--button{
+    margin-left: -2.8rem;
+}
+.flag-text{
+    width: 57rem;
+    padding-left: 27rem;
+    font-size:1rem ;
+    font-weight: 900;
+}
+.flag-img{
+    width: 8rem;
+    height: 100%;
+   }
+ 
+  .who-can-container{
+    height:200vh;
+    width:100vw;
+}
+.who-can-text-h3{
+    padding-top: 8rem;
+    font-size:3rem ;
+    line-height: 3.5rem;
+    width: 74rem;
+    padding-left: 11rem;
+}
+.who-can-text-p{
+    width: 64rem;
+    padding-left: 22rem;
+    font-size:1rem ;
+}
+.who-flex{
+    margin-top: 6rem;
+    margin-left: 8rem;
+}
+
+.ready-container{
+    margin-top: -36rem;
+    height: 30rem;
+}
+
+.ready-text1{
+    padding-top: 6rem;
+    font-size:3rem ;
+    line-height: 3.5rem;
+    width: 74rem;
+    padding-left: 11rem;
+}
+.ready-text2{
+    width: 53rem;
+    padding-left: 31rem;
+    font-size:1rem ;
+}
+.ready--button--container {
+
+    margin-top: 8rem;
+    margin-left: 23rem;
+    
+}
+.ready--button--container2 {
+    margin-top: 8rem;
+    margin-left: 1rem;
+}
+
+
+.footer{
+    height: 29rem;
+}
+
+.footer-logo{
+    padding-left: 7rem;
+    margin-top: 1rem;
+}
+
+.footer-text{
+    width: 21rem;
+    padding-top: 0.5rem;
+    padding-left: 7rem;
+    text-align: justify;
+}
+.d-f{
+    display: flex;
+    align-items: center;
+}
+.b{
+    font-weight: 700;
+}
+.footer-flex{
+    padding-left: 7rem;
+    
+}
+.business{
+    padding-left: 6rem;
+    margin-top: -2rem;
+}
+.personal{
+    padding-left: 6rem;
+    margin-top: -2rem;
+}
+.resources{
+    padding-left: 6rem;
+    margin-top: -2rem;
+}
+
+.footer-text2{
+    text-align: start;
+    padding-top: 2rem;
+    padding-left: 14rem;
+}
+
+.footer-flex2{
+    padding-top: 1rem;
+    display: inline block;
+    padding-left: 12rem;
+}
+.play {
+    margin-left: 1rem;
+    width: 7rem;
+}
+.play2 {
+    margin-right: 51.5rem;
+    width: 7rem;
+}
+
+.copyright{
+    margin-bottom: 1rem;
+    font-weight: 400;
+    margin-top: -1rem;
+}
+.icons{
+    /* margin-bottom: 1rem; */
+    margin-top: -5rem;
+    display: flex;
+    width: 60rem;
+    padding-left: 23rem;
+    justify-content: space-evenly;
+}
+.logo-img{
+    margin-right: 1rem;
+}
+
+
+
+
+}

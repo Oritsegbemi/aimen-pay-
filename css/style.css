@@ -44,6 +44,7 @@ text-decoration: none;
     margin: 0 auto;
 }
 
+
 header{
 height: 100vh;
 width:100%;
@@ -54,9 +55,10 @@ background-size: cover;
 
 .logo img{
     height:1.875rem ;
+    /* background-color: #FDB71A; */
     /* width: 50%; */
 }
-nav{
+.mobile-nav{
     height:3.75rem;
     background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.2) 67.68%, rgba(238, 23, 75, 0) 91.47%, rgba(72, 54, 200, 0.126) 103.59%);
     display:flex;
@@ -66,6 +68,9 @@ nav{
     padding: 0 1rem;
 }
 
+@media screen and (max-width:350px) {
+.desktop-nav{display: none;}
+}
 .hamburger__menu{
     height: 2rem;
     width: 2.5rem;
@@ -418,7 +423,7 @@ line-height: 21px;
     height: 14rem;
     padding: 1.5rem;
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     /* margin-top: -50rem; */
     border: 1px solid #E1E7EC;
 }
@@ -431,7 +436,7 @@ line-height: 21px;
     height: 13rem;
     padding: 1.5rem;
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     margin-top: 2rem;
     border: 1px solid #E1E7EC;
 }
@@ -456,6 +461,7 @@ line-height: 21px;
     line-height: 1rem;
     margin-bottom: 1rem;
     width: 10rem;
+    color: #5F6B7A;
 }
 
 /* ACROSS AFRICA STYLE */
@@ -832,7 +838,10 @@ line-height: 21px;
 }
 
 
-@media screen and (max-width:330px) {
+@media screen and (max-width:790px) {
+    .desktop-nav{
+        display: none;
+    }
     .hero--main--text h2 {
         /* font-weight: 700; */
         font-size: 2.413rem;
