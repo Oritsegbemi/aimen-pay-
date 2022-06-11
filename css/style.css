@@ -13,7 +13,7 @@
     --accentDark:#8176F1;
     --black:#000000;
     --paragraph:#5F6B7A;
-    --white:#ffffff
+    --white:#ffffff;
     --purple: #201353;
     /* --button: #2b5697; */
     /* HOW TO REFRENCE CSS E.G BACKGROUND-COLOR :VAR(--ACCENT)
@@ -149,6 +149,10 @@ ul * li {
 .bi-x-container{
     display: inline-block;
     padding:1.2rem;
+<<<<<<< HEAD
+=======
+    /* background: red; */
+>>>>>>> a40b9330c71040398e341b9e8d1951ab2a49c1db
     position: absolute;
     top:1rem;
     right: 1rem;
