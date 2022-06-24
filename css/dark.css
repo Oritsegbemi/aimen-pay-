@@ -1,0 +1,49 @@
+.dark .hero-text--container,
+.dark .why-container,
+.dark .across-africa,
+.dark .who-can-container {
+  background-color: rgba(44, 45, 49, 1);
+}
+
+.dark ul {
+  background-color: rgb(44, 45, 49, 1);
+}
+
+.dark .hero--main--text h2,
+.dark .hero--paragraph p,
+.dark .why-text-h3,
+.dark .why-text-p,
+.dark .across-afica-text1,
+.dark .across-afica-text2,
+.dark .flag-text,
+.dark .who-can-text-h3,
+.dark li > a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.dark .mobile-nav,
+.dark .desktop-nav {
+  background-color: #56575b !important;
+}
+
+.dark li > a:focus {
+  color: var(--baseColor);
+}
+
+/* WHY EMPLOYERS CHOOSE AMIENPAY */
+.dark .box {
+  background-color: rgba(44, 45, 49, 1);
+  border: 1px solid rgba(57, 58, 63, 1);
+}
+
+.dark .icon-text1 {
+  color: rgba(219, 219, 219, 1);
+}
+
+.dark .icon-text2 {
+  color: rgba(225, 231, 236, 1);
+}
+
+.dark .who-can-text-p {
+  color: rgba(238, 241, 251, 1);
+}
