@@ -6,9 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJ1SAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/desktop-view.css">
@@ -18,8 +15,10 @@
 
 <body>
   <header>
+
     <div class="container">
       <nav class="mobile-nav">
+
         <div class="logo logo-light" id="logo-image">
           <img src="assets/img/logo.png" alt="AminienPay Logo" />
         </div>
@@ -49,12 +48,12 @@
               <li><a href="#">Projects</a></li>
               <li><a href="#">Sign in</a></li>
             </div>
+          
             <a class="create--account" href="#">Create an account</a>
           </div>
         </ul>
         <!-- DARK MODE TOGGLE  -->
       </nav>
-
 
       <!--  HAMBURGER MENU MOBILE -->
 
@@ -73,13 +72,13 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
+            <a class="header--create--account div pointer" href="#">Create an account</a> 
             <li><a href="#">Sign in</a></li>
           </ul>
         </nav>
 
 
-        <a class="header--create--account div pointer" href="#">Create an account</a>
-
+        
         <!-- <div class="comp" id="toggle-image"> -->
 
 
@@ -110,28 +109,32 @@
                 you a complete.
               </p>
             </div>
-          </div>
-          <div class="hero--button--container">
-            <a type="button" class="get--start--button mobile--button pointer" id="get-started">Get started
-            </a>
-            <a type="button" class="mobile--button pointer" id="demo">Request a demo</a>
+            <div class="hero--button--container">
+              <a type="button" class="get--start--button mobile--button pointer" id="get-started">Get started
+              </a>
+              <a type="button" class="mobile--button pointer" id="demo">Request a demo</a>
+            </div>
           </div>
         </div>
         <div class="hero-image-container">
           <img src="assets/img/lonecrane.png" class="lone-crane" alt="arrow">
-          <img src="assets/img/skye-landingpage.png" class="skye-img-mobile" alt="skye landing page image">
+          <div class="dashboard-img">
+            <img src="assets/img/skye-landingpage.png" class="skye-img-mobile" alt="skye landing page image">
+          </div>
+          <div class="skye-img-container">
+            <img src="assets/img/skye-landingpage.png" class="skye-img" alt="skye landing page image">
 
-          <img src="assets/img/skye-landingpage.png" class="skye-img" alt="skye landing page image">
+          </div>
         </div>
       </div>
-
   </header>
 
 
 
   <main>
     <!-- WHAT CAN WE DO FOR YOU SECTION -->
-    <div class="what-can-we-do-for-you-container">
+    <section class="what-can-we-do-for-you-container">
+      <article>
       <div class="what-can-we-do-for-you-text">
         <div class="what-first-text">
           <p>What can we do for you</p>
@@ -158,8 +161,6 @@
               <p class="check-paragraph">Remit tax, pensions and contributions seamlessy</p>
             </div>
           </div>
-        </div>
-        <div class="what-flex">
           <div class="what-stack">
             <div class="check">
               <img src="assets/img/check-mark.png" class="check-image" alt="check image">
@@ -177,17 +178,21 @@
             </div>
           </div>
         </div>
+        <!-- <div class="what-flex">
+         jkq-hejg-tpd
+        </div> -->
       </div>
       <div class="what--button--container">
         <a type="button" class="get--start--button what--mobile--button pointer" id="what-get-started">
           Get started
         </a>
       </div>
-
-    </div>
+    </article>
+    </section>
 
     <!-- WHY EMPLOYERS CHOOSE AMIENPAY -->
-    <div class="why-container">
+    <section class="why-container">
+      <article>
       <div class="why-text">
         <h3 class="why-text why-text-h3">Why employers are choosing <span class="coloured-text">AIMIENPay</span> for their
           businesses and staff</h3>
@@ -226,8 +231,11 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="across-africa">
+    </article>
+    </section>
+
+    <section class="across-africa">
+      <article>
       <div class="who-can-text">
         <div class="across-afica-text1">
           <h3>
@@ -266,8 +274,10 @@
 
         </div>
       </div>
-    </div>
-    <div class="who-can-container">
+    </article>
+  </section>
+    <section class="who-can-container">
+      <article>
       <div class="who-can-text">
         <h3 class="who-can-text-h3">Who can use <span class="coloured-text">AIMIENPay</span></h3>
         <p class="who-can-text-p">AIMIENPAY is specially crafted for product and service businesses who need to pay
@@ -294,8 +304,11 @@
             posuere risus a</div>
         </div>
       </div>
-    </div>
-    <div class="ready-container">
+    </article>
+    </section>
+
+    <section class="ready-container">
+      <article>
       <div class="ready-text">
         <h3 class="ready-text1">Are you ready to give your company and your employees a boost?</h3>
       <p class="ready-text2">Instantly create an account and begin setting up payroll for your business.</p>
@@ -311,7 +324,8 @@
           Request a Demo
         </a>
       </div>
-    </div>
+      </article>
+    </section>
 
   </main>
 
@@ -320,18 +334,20 @@
 
 
   <footer>
-    <div class="footer">
-      <div class="d-f">
-        <div class="f-t">
-          <div class="footer-logo">
-            <img src="assets/img/Frame 43587.png" class="footer-logo" alt="logo">
+    <article>
+
+      <div class="footer">
+        <div class="d-f">
+          <div class="f-t">
+            <div class="footer-logo">
+              <img src="assets/img/Frame 43587.png" class="footer-logo" alt="logo">
           </div>
           <div class="footer-text">
             <p class="footer-text">As technology continues to evolve, our commitment will remain the same, helping
               people do more, learn more and earn more in less time yet with better results.</p>
+            </div>
           </div>
-        </div>
-        <div class="footer-flex">
+          <div class="footer-flex">
           <div class="business">
             <p class="b">Business</p>
             <p>Pay</p>
@@ -369,12 +385,10 @@
       </div>
     </div>
 
-    </div>
+  </div>
+</article>
   </footer>
   <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
 </body>
 
