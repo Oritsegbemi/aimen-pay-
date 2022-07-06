@@ -460,6 +460,7 @@ line-height: 21px;
 
 .check-text {
     text-align: center;
+    margin-top: 1rem;
     /* padding: 1rem; */
     width: 150px;
     color: white;

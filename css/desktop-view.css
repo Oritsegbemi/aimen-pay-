@@ -61,7 +61,7 @@
         background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.2) 67.68%, rgba(238, 23, 75, 0) 91.47%, rgba(72, 54, 200, 0.126) 103.59%);
         align-items: center;
         justify-content: flex-end;
-        padding: 0 5rem;
+        padding: 0 4rem;
     }
 
     .ul-line {
@@ -163,7 +163,7 @@
 
     .hero--main--text h2 {
         font-weight: 700;
-        font-size: 4.4rem;
+        font-size: 4.2rem;
         line-height: 5.03rem;
         color: var(--black);
 
@@ -265,7 +265,7 @@
         justify-content: space-around;
         align-items: center;
         height: 18rem;
-        margin-top: 14rem;
+        margin-top: 10rem;
         width: 100%;
     
     }
@@ -309,6 +309,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: green;
     }
 
     .why-text-p {
