@@ -88,6 +88,8 @@
         color: var(--black);
         margin: 0.5rem;
     }
+    
+    
 
     .create--account {
         background: var(--buttonGradient);
@@ -105,6 +107,7 @@
         color: white;
         width: 11rem;
     }
+    
 
     .hero-text--container {
         display: flex;
@@ -487,7 +490,8 @@
         flex-direction: row;
         justify-content: center;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        height: 5rem;
 
     }
     .rbc{

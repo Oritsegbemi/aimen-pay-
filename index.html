@@ -17,7 +17,7 @@
   <header>
 
     <div class="container">
-      <nav class="mobile-nav">
+      <nav class="mobile-nav"  id="staticnav">
 
         <div class="logo logo-light" id="logo-image">
           <img src="assets/img/logo.png" alt="AminienPay Logo" />
@@ -30,7 +30,7 @@
         <!--  HAMBURGER MENU MOBILE -->
 
         <div class="hamburger__menu bg-danger">
-          <span class="hamburger__lines"></span>
+          <span class="hamburger__lines"  id="menu"></span>
           <span class="bi bi-list"></span>
           <span class="hamburger__lines"></span>
         </div>
@@ -58,15 +58,15 @@
       <!--  HAMBURGER MENU MOBILE -->
 
 
-      <div class="desktop-nav">
+      <nav class="desktop-nav" id="desktopstaticnav">
 
         <img src="assets/img/logo.png" class="logo" id="logo-image" alt="AminienPay Logo" />
         <img src="assets/img/logo-dark.png" class="logo logo-dark-desktop" id="logo-image" alt="AminienPay Logo" />
 
 
 
-        <nav>
-          <ul class="ul-line ul">
+        <!-- <nav> -->
+          <ul class="ul-line ul" id="desktopmenu">
 
             <li><a class="text-danger link-active" href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -75,7 +75,7 @@
             <a class="header--create--account div pointer" href="#">Create an account</a> 
             <li><a href="#">Sign in</a></li>
           </ul>
-        </nav>
+        <!-- </nav> -->
 
 
         
@@ -86,7 +86,7 @@
           title="Change Theme" />
         <img src="assets/img/Component 2.png" class="comp-img comp-img-light" alt="dark and light mode toggle button"
           title="Change Theme" />
-      </div>
+        </nav>
 
 
 
@@ -110,9 +110,9 @@
               </p>
             </div>
             <div class="hero--button--container">
-              <a type="button" class="get--start--button mobile--button pointer" id="get-started">Get started
+              <a type="button" class="get--start--button mobile--button pointer button-hover" id="get-started">Get started
               </a>
-              <a type="button" class="mobile--button pointer" id="demo">Request a demo</a>
+              <a type="button" class="mobile--button pointer button-hover" id="demo">Request a demo</a>
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@
         </div> -->
       </div>
       <div class="what--button--container">
-        <a type="button" class="get--start--button what--mobile--button pointer" id="what-get-started">
+        <a type="button" class="get--start--button what--mobile--button pointer button-hover" id="what-get-started">
           Get started
         </a>
       </div>
@@ -247,7 +247,7 @@
             We are a pan-African team dedicated to addressing work wherever it occurs across the continent.
           </p>
         </div>
-        <div class="who-can-text-p aat">
+        <div class="who-can-text-p">
           <p>
             We're designing solutions to meet you where you are, whether you're a large corporation in Nairobi, a tech
             startup in Kigali, a bookstore in Lagos, or simply wanting to do more for your domestic workers.
@@ -255,7 +255,7 @@
         </div>
       </div>
       <div class="across-afica-button">
-        <a type="button" class="across-africa--mobile--button pointer" id="visit-our-blog">
+        <a type="button" class="across-africa--mobile--button pointer button-hover" id="visit-our-blog">
           Visit Our Blog
         </a>
       </div>
@@ -315,12 +315,12 @@
 
       </div>
       <div class="ready--button--container">
-        <a type="button" class="create-account-button rbc pointer">
+        <a type="button" class="create-account-button rbc pointer button-hover2">
           Create an Account
         </a>
 
 
-        <a type="button" class="demo-button pointer">
+        <a type="button" class="demo-button pointer button-hover2">
           Request a Demo
         </a>
       </div>
@@ -350,18 +350,18 @@
           <div class="footer-flex">
           <div class="business">
             <p class="b">Business</p>
-            <p>Pay</p>
-            <p>People</p>
+            <p class="alink"><a  href="*">Pay</a></p>
+            <p><a class="a" href="*">People</a></p>
           </div>
           <div class="personal">
             <p class="b">Personal</p>
-            <p>Inclusive</p>
+            <p><a class="a" href="*">Inclusive</a></p>
           </div>
           <div class="resources">
             <p class="b">Resources</p>
-            <p>Blog</p>
-            <p>Terms of use</p>
-            <p>Privacy policy</p>
+            <p><a href="*">Blog</a></p>
+            <p><a href="*">Terms of use</a></p>
+            <p><a href="*">Privacy policy</a></p> 
           </div>
         </div>
       </div>

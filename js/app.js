@@ -53,3 +53,30 @@ lightTheme.addEventListener("click", function () {
 
 theme = localStorage.getItem("class");
 changeTheme(theme);
+// ********************* STICKY NAV **************************
+
+var staticnav  = document.getElementById("staticnav");
+var menu  = document.getElementById("menu");
+
+window.onscroll = function(){
+  if(window.pageYOffset >= menu.offsetTop){
+    staticnav.classList.add("sticky")
+  }
+  else{
+    staticnav.classList.remove("sticky")
+  }
+
+}
+
+var desktopstaticnav  = document.getElementById("desktopstaticnav");
+var desktopmenu  = document.getElementById("desktopmenu");
+
+window.onscroll = function(){
+  if(window.pageYOffset >= menu.offsetTop){
+    desktopstaticnav.classList.add("desktopsticky")
+  }
+  else{
+    desktopstaticnav.classList.remove("desktopsticky")
+  }
+
+}

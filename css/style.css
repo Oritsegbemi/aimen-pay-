@@ -18,6 +18,7 @@
     --paragraph: #5F6B7A;
     --white: #ffffff;
     --purple: #201353;
+    --reversebuttonGradient: linear-gradient(to right, #8176F1 , #4836C8);
     /* --button: #2b5697; */
     /* HOW TO REFRENCE CSS E.G BACKGROUND-COLOR :VAR(--ACCENT)
     background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.2) 67.68%, rgba(238, 23, 75, 0) 91.47%, rgba(72, 54, 200, 0.126) 103.59%)
@@ -78,6 +79,12 @@ header {
     opacity: 1;
 }
 
+li>a:hover {
+    color: #4836C8;
+}
+.header--create--account:hover{
+    background: var(--reversebuttonGradient);
+}
 
 
 .mobile-nav {
@@ -92,6 +99,20 @@ header {
 }
 
 @media screen and (max-width:350px) {}
+nav.sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav.desktopsticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    /* background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.959) 67.68%, rgba(238, 23, 77, 0.192) 91.47%, rgba(71, 54, 200, 0.596) 103.59%); */
+   
+}
 
 .desktop-nav {
     display: none;
@@ -343,6 +364,21 @@ line-height: 21px;
     border-radius: 7rem;
     
 }
+.button-hover:hover{
+    background: white;
+    color: #4836C8;
+    border: 3px solid #4836C8;
+    transform: scale(1.2, 1.2);
+  transition: all 0.3s ease-out;
+}
+
+.button-hover2:hover{
+    background: #4836C8;
+    color: white;
+    border: 3px solid white;
+    transform: scale(1, 1);
+    transition: all 0.3s ease-out;
+}
 
 #demo {
     background: var(--white);
@@ -492,6 +528,10 @@ line-height: 21px;
     padding-left: 4.1rem;
     height: 3.5rem;
     /* width: 10rem; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -577,6 +617,11 @@ line-height: 21px;
     border: 1px solid #E1E7EC;
 
 }
+.box:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
 
 .icon {
     display: flex;
@@ -623,7 +668,7 @@ line-height: 21px;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     width: 25rem;
     /* padding-left: 6rem; */
     width: 100%;
@@ -634,7 +679,7 @@ line-height: 21px;
     text-align: center;
     font-size: 0.8rem;
     line-height: 1.1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     /* width: 27rem; */
     font-weight: 400;
     padding: 1rem;
@@ -643,9 +688,6 @@ line-height: 21px;
 
 }
 
-.aat {
-    margin-bottom: 5.5rem;
-}
 
 .across-africa--mobile--button {
     background: var(--buttonGradient);
@@ -679,6 +721,11 @@ line-height: 21px;
 .flag-img {
     width: 45px;
 }
+.flag-img:hover{
+    transform: scale(1.2, 1.3);
+    transition: all 0.4s ease-out;
+}
+
 
 /* WHO CAN STYLE */
 
@@ -703,7 +750,7 @@ line-height: 21px;
     width: 21rem;
     font-size: 2rem;
     /* padding-left: 10rem; */
-    padding-top: 14rem;
+    /* padding-top: 14rem; */
     width: 100%;
 }
 
@@ -712,7 +759,7 @@ line-height: 21px;
     text-align: center;
     font-size: 0.8rem;
     line-height: 1.1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     width: 27rem;
     font-weight: 400;
     /* padding-right: 1rem; */
@@ -815,7 +862,7 @@ line-height: 21px;
     padding: 1.5rem 3rem;
     border-radius: 4rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 
 
 
@@ -843,6 +890,10 @@ line-height: 21px;
     /* padding-left: 2rem; */
     padding-top: 3rem;
     height: 45rem;
+}
+footer {
+    background-color: #201353;
+    
 }
 
 .d-f {
@@ -884,11 +935,22 @@ line-height: 21px;
     display: flex;
     justify-content: space-around;
 }
+p>a{
+    color: white
+}
+p>a:hover{
+    color: rgba(218, 216, 216, 0.322)
+}
+
 
 .copyright {
     padding-top: 5rem;
     text-align: center;
     color: white;
+}
+.logo-img:hover{
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s ease-out;
 }
 
 .icons {
@@ -1038,8 +1100,8 @@ line-height: 21px;
         /* padding-right: 2rem; */
     }
 
-
-
+    /* .footer-flex  */
+ 
     /* width: 532px; */
     .hero--paragraph {
         height: 5rem;
